@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <!-- Ícones no menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-stars me-2"></i>Nerd Universe
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-person me-1"></i>Login
+                </a>
+                <a class="nav-link" href="#">
+                    <i class="bi bi-cart3 me-1"></i>Carrinho
+                    <span class="badge bg-danger">3</span>
+                </a>
+                <a class="nav-link" href="#">
+                    <i class="bi bi-heart me-1"></i>Favoritos
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ícones em cards de produtos -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="bi bi-t-shirt text-primary me-2"></i>
+                        Camisetas
+                    </h5>
+                    <p class="card-text">Coleção de camisetas nerds</p>
+                    <button class="btn btn-primary">
+                        <i class="bi bi-cart-plus me-2"></i>Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ícones em listas -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h4><i class="bi bi-info-circle me-2"></i>Informações</h4>
+            <ul class="list-unstyled">
+                <li><i class="bi bi-truck text-success me-2"></i>Frete grátis acima de R$ 100</li>
+                <li><i class="bi bi-arrow-repeat text-warning me-2"></i>Troca em 30 dias</li>
+                <li><i class="bi bi-shield-check text-primary me-2"></i>Compra segura</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Ícones no footer -->
+    <footer class="bg-dark text-light mt-5 p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Redes Sociais</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-light me-3">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                        <a href="#" class="text-light me-3">
+                            <i class="bi bi-facebook fs-4"></i>
+                        </a>
+                        <a href="#" class="text-light me-3">
+                            <i class="bi bi-tiktok fs-4"></i>
+                        </a>
+                        <a href="#" class="text-light">
+                            <i class="bi bi-youtube fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contato</h5>
+                    <p><i class="bi bi-envelope me-2"></i>contato@nerduniverse.com</p>
+                    <p><i class="bi bi-whatsapp me-2"></i>(11) 99999-9999</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+{% endblock %}

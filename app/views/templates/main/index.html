@@ -1,25 +1,31 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="container my-5">
-        <h1 class="mb-4">Bem-vindo à Manel Universe!</h1>
-        <p class="lead">Explore nossa coleção de camisetas e moletons inspirados na cultura nerd.</p>
-        <div class="row">
-            <!-- Exemplo de produto -->
-            <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                    <img src="/static/images/produto1.jpg" class="card-img-top" alt="Produto 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Camiseta Geek</h5>
-                        <p class="card-text">Camiseta confortável com estampa de cultura nerd.</
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="text-accent fw-bold">R$ 59,90</span>
-                            <a href="#" class="btn btn-sm text-accent bg-white">Comprar</a>
-                        </div>
+<head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<div class="container my-5">
+    <h1 class="mb-4">Bem-vindo à Manel Universe!</h1>
+    <p class="lead">Explore nossa coleção de camisetas e moletons inspirados na cultura nerd.</p>
+    <div class="row">
+        <!-- Exemplo de produto -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="{{ url_for('static', filename='images/produto1.jpg') }}" class="card-img-top" alt="Produto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta Geek</h5>
+                    <p class="card-text">Camiseta confortável com estampa de cultura nerd.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="text-accent fw-bold">R$ 59,90</span>
+                        <a href="#" class="btn btn-sm text-accent bg-white">Comprar</a>
                     </div>
                 </div>
             </div>
-            <!-- Adicione mais produtos conforme necessário -->
         </div>
+        <!-- Adicione mais produtos conforme necessário -->
     </div>
+</div>
+    
 {% endblock %}
+<!-- ...existing code... -->
